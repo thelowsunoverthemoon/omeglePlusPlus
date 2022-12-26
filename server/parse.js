@@ -39,10 +39,8 @@ const parseCode = (message) => {
     const parsed = { loop: 0, hier: [] };
     const code = { str: message, ind: 0 };
 
-    console.log(message);
     parsePrelude(code, parsed);
     parseMain(code, parsed.hier);
-
 
     return parsed;
 }
@@ -50,7 +48,6 @@ const parseCode = (message) => {
 function parseMain(code, parsed) {
     while (code.ind != code.str.length) {
         parseExpr(code, parsed);
-
     }
 }
 
@@ -58,10 +55,7 @@ function parsePrelude(code, parsed) {
     moveToChar(code, '(');
 
     let obj = moveToObj(code);
-
     parsed.loop = parseType(Param.Int, obj);
-
-    console.log("TIME " + parsed.loop);
 
     moveToChar(code, ')');
 }
@@ -71,8 +65,6 @@ function parseExpr(code, hier) {
 
     let com = moveToObj(code);
     getRetType(com);
-
-    console.log("COMMAND " + com);
 
     parseCom(com, code, hier);
 
@@ -106,9 +98,6 @@ function parseParam(param, code, arg) {
                 arg.push(val);
             }
         }
-        //       console.log("VALUE " + val);
-        //       console.log(arg);
-
 
     }
 
