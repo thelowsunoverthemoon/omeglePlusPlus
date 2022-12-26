@@ -1,0 +1,40 @@
+.form {
+  display: flex;
+  width: 95%;
+  margin-left: 2.5%;
+  margin-bottom: 10px;
+  border-radius: 4px;
+}
+
+.input {
+  background: #edb451;
+  border: none;
+  color: #fff;
+  border-radius: 4px;
+  padding: 3%;
+  width: 100%;
+  font-size: 1.0em;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #54575d;
+  /* Firefox */
+  opacity: 1;
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #54575d;
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #54575d;
+}
+
+input:focus,
+textarea:focus,
+select:focus {
+  outline: none;
+}

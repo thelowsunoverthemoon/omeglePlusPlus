@@ -1,0 +1,141 @@
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+#root {
+  height: 100vh;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.joinMatrixBack {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  background: url("https://media0.giphy.com/media/xULW8l2gXuRPmsQe8U/giphy.gif?cid=6c09b9528c5c6530fcbb027dd3645a1e884bb3d5abea8f1b&rid=giphy.gif&ct=s");
+  justify-content: center;
+}
+
+.joinOuterContainer {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  height: 100vh;
+  min-height: 475px;
+  align-items: center;
+  flex-direction: column;
+
+  background: #C02425;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #F0CB35, #C02425);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #F0CB35, #C02425);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.joinWhiteBack {
+  align-items: center;
+  width: 50%;
+  background: white;
+  height: 80%;
+  display: flex;
+  min-width: 565px;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.joinInnerContainer {
+  width: 30%;
+}
+
+.joinInput {
+  border-radius: 5px;
+  border: 2px solid #dfe2e8;
+  padding: 10px;
+  width: 100%;
+}
+
+.heading {
+  color: #edb451;
+  font-size: 5em;
+  padding-bottom: 20px;
+  font-family: 'Courier New', Courier, monospace;
+
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  background-color: #edb451 !important;
+}
+
+.button {
+  color: #fff !important;
+
+  text-decoration: none;
+  background: #edb451;
+  padding: 20px;
+  border-radius: 5px;
+  display: inline-block;
+  border: none;
+  font-size: 1.0em;
+  width: 100%;
+}
+
+button#dropdown.dropdown-toggle.btn.btn-primary {
+  background: #9d9e9d;
+  padding: 10px;
+  border: none;
+  margin-top: 7px;
+  font-size: 0.9em;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.dropdown-menu.show {
+  width: 100%;
+}
+
+.mt-20 {
+  margin-top: 20px;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .joinOuterContainer {
+    height: 100%;
+  }
+
+  .joinInnerContainer {
+    width: 90%;
+  }
+
+}
+
+button:focus {
+  outline: 0;
+}

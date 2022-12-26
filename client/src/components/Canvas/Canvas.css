@@ -1,0 +1,9 @@
+.canvas {
+    display: flex;
+    width: 55%;
+    height: 90%;
+    border-radius: 8px;
+    background: white;
+    color: #edb451;
+    margin-right: 15px;
+}
