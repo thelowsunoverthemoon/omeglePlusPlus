@@ -36,6 +36,21 @@ The language is based on Lisp. To code, you must start it with ```\co``` and spe
 | ```circle``` | draws circle at x 1 y 2 with radius 3, start angle 4, end angle 5, and col 7. If 6 evals false, draw clockwise. | ```Int, Int, Int, Int, Int, Bool, Col``` | ```Void``` |
 | ```line``` | draws line from point x 1 y 2, to x 3 y 4 | ```Int, Int, Int, Int, Col``` | ```Void``` |
 
+For example,
+
+```
+\co (5) (? (even t) (rect (* t 20) 90 10 30 red)) (? (odd t) (rect (* t 20) 90 10 30 blue))
+```
+
+will draw a rectangle that lasts for 5 seconds that moves to the left, and alternates colours between red and blue. Another example
+
+```
+\co (10) (img 2 3 20 20 https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/1200px-Heart_coraz%C3%B3n.svg.png)
+```
+
+will draw a heart (the url) at 2, 3 with proportions 20 20.
+
+
 ## run
 
 To run client side, use
