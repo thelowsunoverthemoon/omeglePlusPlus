@@ -17,14 +17,15 @@ const Behavs = new Map([
         ctx.fillStyle = c;
         ctx.fillRect(x, y, w, h);
     }],
-    ["img", function ([x, y, i], ctx) {
+    ["img", function ([x, y, dx, dy, i], ctx) {
         if (ImageMap.get(i) !== undefined) {
-            ctx.drawImage(ImageMap.get(i), x, y);
+            ctx.imageSmoothingEnabled = false;
+            ctx.drawImage(ImageMap.get(i), x, y, dx, dy);
             return;
         }
         let img = new Image();
         img.onload = function () {
-            ctx.drawImage(img, x, y);
+            ctx.drawImage(img, x, y, dx, dy);
         };
         img.src = i;
         ImageMap.set(i, img);
