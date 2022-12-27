@@ -48,8 +48,11 @@ will draw a rectangle that lasts for 5 seconds that moves to the left, and alter
 \co (10) (img 2 3 20 20 https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/1200px-Heart_coraz%C3%B3n.svg.png)
 ```
 
-will draw a heart (the url) at 2, 3 with proportions 20 20.
+will draw a heart (the url) at 2, 3 with proportions 20 20. The code in the screen capture above is
 
+```
+\co (5) (? (even t) (img 2 3 250 250 https://preview.redd.it/uk6i39crfju91.png?width=320&crop=smart&auto=webp&s=6cfaa99a7e00ff3399e4d6ad6a62d413d6fadc2d)) (? (odd t) (img 2 3 250 250 https://preview.redd.it/7pn4e9crfju91.png?width=512&format=png&auto=webp&s=e103518abb204f7433ec40534901c15e789a5863))
+```
 
 ## run
 
