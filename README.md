@@ -23,7 +23,7 @@ The language is based on Lisp. To code, you must start it with ```\co``` and spe
 | function  | description | parameters | return |
 | ------------- | ------------- | ------------- | ------------- | 
 | ```even``` | returns true if even | ```Int``` | ```Bool``` |
-| ```odd``` | returns true if ddd | ```Int``` | ```Bool``` |
+| ```odd``` | returns true if odd | ```Int``` | ```Bool``` |
 | ```?``` | runs function if the 1 param evals to true | ```Bool, Void``` | ```Void``` |
 | ```!``` | runs function if the 1 param evals to false | ```Bool, Void``` | ```Void``` |
 | ```=``` | returns true if equal | ```Int, Int``` | ```Bool``` |
