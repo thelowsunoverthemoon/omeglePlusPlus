@@ -7,7 +7,11 @@
 * login screen that matches you with similar users
 * parser/interpreter for custom Lisp-based language, returns error msgs to user
 * language supports logic, nested expressions, and shapes/imgs/animations
-* express.js for server, react.js for client, and socket.io for server-client communication
+* uses :
+  - **express.js** for server
+  - **react.js** for client
+  - **socket.io** for server-client communication
+  - **jest** for tests
 
 ## screen captures
 
@@ -53,6 +57,16 @@ will draw a heart (the url) at 2, 3 with proportions 20 20. The code in the scre
 ```
 \co (5) (? (even t) (img 2 3 250 250 https://preview.redd.it/uk6i39crfju91.png?width=320&crop=smart&auto=webp&s=6cfaa99a7e00ff3399e4d6ad6a62d413d6fadc2d)) (? (odd t) (img 2 3 250 250 https://preview.redd.it/7pn4e9crfju91.png?width=512&format=png&auto=webp&s=e103518abb204f7433ec40534901c15e789a5863))
 ```
+
+## test
+
+Use
+
+```Batch
+npm test
+```
+
+in the test folder
 
 ## run
 
